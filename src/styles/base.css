@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid rgb(230, 230, 230);
+  border-bottom: none;
+  width: 515px;
+  padding: 5px;
+  background-color: white;
+  color: grey;
+}
+
+li:last-child {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.wrapper {
+  margin-top: 50px;
+  background-color: rgb(244, 244, 244);
+  width: 900px;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: maroon;
+}
+
+.deleteItemButton {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  float: right;
+  padding-right: 5px;
+  cursor: pointer;
+  color: maroon;
+}
+
+.deleteItemButton:focus {
+  outline: none;
+}
+
+.listFooter {
+  display: flex;
+  width: 515px;
+  border: 1px solid rgb(230, 230, 230);
+  justify-content: space-between;
+  background-color: white;
+  padding: 0px 3px;
+  color: rgb(157, 157, 157);
+}
+
+.clearButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: rgb(157, 157, 157);
+  font-size: 16px;
+}
+
+.clearButton:hover {
+  text-decoration: underline;
+}
+
+.clearButton:focus {
+  outline: none;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.filter input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.filter label {
+  line-height: 1;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.filter label:hover {
+  cursor: pointer;
+  border: 1px solid rgb(248, 240, 240);
+}
+
+input:checked + label {
+  border: 1px solid rgb(243, 223, 223);
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+  color: rgb(234, 215, 215);
+  font-weight: lighter;
+}
+
+.inputBox {
+  width: 465px;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 5px;
+  height: 40px;
+  font-size: 20px;
+  border-right: none;
+  color: palevioletred;
+}
+
+.inputBox:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-size: 20px;
+  color: rgb(234, 215, 215);
+  font-style: italic;
+}
+
+.addButton {
+  height: 40px;
+  position: relative;
+  bottom: 1px;
+  border: 1px solid rgb(230, 230, 230);
+  border-left: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: grey;
+}
+
+.addButton:focus {
+  outline: none;
+}
