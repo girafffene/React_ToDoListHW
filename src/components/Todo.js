@@ -46,7 +46,7 @@ export default props => {
               className={todo.status === "completed" ? "completed" : ""}
               onClick={e => toggle(todo.id)}
             >
-              {todo.text}{" "}
+              {todo.text}
               <button className="deleteItemButton" onClick={e => del(todo.id)}>
                 <TiDelete />
               </button>
